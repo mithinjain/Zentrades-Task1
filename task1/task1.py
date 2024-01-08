@@ -42,7 +42,7 @@ def display_products():
     chart_image_base64 = base64.b64encode(chart_image.getvalue()).decode("utf-8")
     chart_html = f'<img src="data:image/png;base64,{chart_image_base64}">'
 
-    return render_template("index.html", table_html=table_html, chart_html=chart_html)
+    return render_template("index.html", chart_html=chart_html, table_html=table_html)
 
 
 if __name__ == "__main__":
